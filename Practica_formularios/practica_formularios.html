@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica formularios</title>
+</head>
+<body>
+
+    <form action="#" method="POST" target="_blank">
+        <label for="nombre"> Nombre: </label>
+        <input type="text" id="nombre" name="nombre" maxlength="30" placeholder="Escribe tu nombre">
+        
+        <br>
+
+        <label for="apellido"> Apellido: </label>
+        <input type="text" id="apellido" name="apellido" maxlength="30" placeholder="Escribe tu apellido">
+
+        <br>
+
+        <label for="email"> Email: </label>
+        <input type="email" id="email" name="email" size="50" placeholder="correo@empresa.com" required>
+
+        <br>
+
+        <label for="asunto">Asunto</label>
+        <select size="3">
+            <option>Pedir presupuesto web</option>
+            <option>Solicitar cita previa</option>
+            <option>Otros</option>
+        </select>
+
+        <br>
+
+        <label for="conocer">¿Como nos ha conocido?</label>
+        <input type="checkbox" name="option" value="1">Un amigo
+        <input type="checkbox" name="option" value="2">Googleando
+        <input type="checkbox" name="option" value="3">Buzoneo
+        <input type="checkbox" name="option" value="4">Otros
+
+        <br>
+
+        <label for="mensaje">Escribe tu mensaje</label>
+        <br>
+        <textarea name="mensaje" id="mensaje" maxlength="300"></textarea>
+
+        <br>
+
+        <input type="checkbox" name="acepta_rgpd" id="acepta_rgpd" value="acepta" required>
+        <label for="acepta_rgpd">He leido y acepto el <a href="#" target="_blank"> aviso legal y la politica de privacidad.</href></label>
+    </form>
+    
+</body>
+</html>
